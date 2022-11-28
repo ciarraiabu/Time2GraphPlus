@@ -67,7 +67,7 @@ class ParMap(object):
 
     def run_slices(self, slices):
         mgr = mp.Manager()
-        report_queue = mgr.Queue()
+        report_queue = mgr.Queue(1000)
         if self.monitor_func is not None:
             monitor = mp.Process(target=self.monitor_func, args=(report_queue,))
             monitor.start()
