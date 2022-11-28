@@ -4,7 +4,7 @@ import sys
 import dill
 import contextlib
 import math
-from multiprocess import mp
+import pathos.helpers as mp
 import numpy as np
 
 NJOBS = mp.cpu_count()
