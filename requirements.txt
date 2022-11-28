@@ -8,4 +8,4 @@ xgboost>=0.80
 torch>=0.4.1
 networkx>=2.1
 tslearn>=0.2.5
-pathos>=0.2
+multiprocess>=0.2
