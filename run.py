@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import argparse
 import warnings
-import multiprocess as mp
+from pathos.helpers import mp
 from time2graph.core.model_gat import Time2GraphGAT
 from config import *
 from archive.load_usr_dataset import load_usr_dataset_by_name
